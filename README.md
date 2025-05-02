@@ -1,6 +1,6 @@
-# GAMGA: Genetic Algorithm for Modeling to Generate Alternatives
+# Genetic Algorithm for Modeling to Generate Alternatives (MGA) in energy system planning
 
-GAMGA is an optimization algorithm designed for energy systems that combines a genetic algorithm with a modeling to generate alternatives (MGA) method. The algorithm and the small model developed have different technologies installed at different locations which can vben cost optimized. The algorithm will search for alternative feasible solutions in the solution space with the solution space being determined by the cost optimal value and the introduced slack.  
+This repository provides an optimization algorithm designed for energy systems that combines a genetic algorithm with a modeling to generate alternatives (MGA) method. The algorithm and the small model developed have different technologies installed at different locations which can vben cost optimized. The algorithm will search for alternative feasible solutions in the solution space with the solution space being determined by the cost optimal value and the introduced slack.  
 
 ## Installation
 
@@ -12,7 +12,7 @@ Gurobi is used as the main solver for this model, but other solvers can also be 
 
 ## Usage
 
-All the model files are placed in the GAMGA_model folder. model_(res).yaml files represent the main format of the model that will be run. If you use a different solver for example, different settings need to be specified in this file. Again, more about this can be found when looking at the CAlliope link. 
+All the model files are placed in the Genetic_MGA_model folder. model_(res).yaml files represent the main format of the model that will be run. If you use a different solver for example, different settings need to be specified in this file. Again, more about this can be found when looking at the CAlliope link. 
 
 To run the model you have the model_run.ipynb file. Make sure that when initializing the model you refer to the correct path where your model.yaml files are located. Variables such as generation number, population size, population number, mutation rate and crossover rate can be specified in the variable tab. The algorithm should be easy applicable to other Calliope models. 
 
